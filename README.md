@@ -13,7 +13,12 @@ invA <- solve(A)
 
 The first error we come to is trying to use "solve" on A which will find the inverse of the dimension. This doesn't work on a square because the dimensions are equal to each other so the values can't be inversed. So the inverse comes back with an error.
 
+The next command checks if the determinant of a square matrix. The value returned is 0 which means that detA is a square matrix and it's singular. 
+
 detA <- det(A)
+
+<img width="554" height="79" alt="image" src="https://github.com/user-attachments/assets/9cbfecde-785c-4e49-a08f-23c0be12dc01" />
+
 
 
 # For B, use tryCatch to capture errors
