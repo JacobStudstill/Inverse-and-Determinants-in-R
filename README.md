@@ -4,13 +4,9 @@ A <- matrix(1:100,  nrow = 10)
 
 B <- matrix(1:1000, nrow = 10)
 
-dim(A)  
+dim(A)  # should be 10 × 10
 
-# should be 10 × 10
-
-dim(B)  
-
-# 10 × 100 — not square
+dim(B)  # 10 × 100 — not square
 
 <img width="310" height="142" alt="image" src="https://github.com/user-attachments/assets/9818a603-1145-42da-9628-43d4346085a0" />
 
@@ -29,9 +25,14 @@ detA <- det(A)
 <img width="554" height="79" alt="image" src="https://github.com/user-attachments/assets/9cbfecde-785c-4e49-a08f-23c0be12dc01" />
 
 
-
 # For B, use tryCatch to capture errors
+
+When running the two commands below with the error messages, they will error out because for both solve and det commands you need to have square matrixes.
+
 invB <- tryCatch(solve(B), error = function(e) e)
 
 detB <- tryCatch(det(B),   error = function(e) e)
+
+<img width="509" height="145" alt="image" src="https://github.com/user-attachments/assets/de2f4d2e-6b9a-488a-9c34-a86401c15c2d" />
+
 
