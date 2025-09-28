@@ -8,6 +8,7 @@ dim(B)  # 10 × 100 — not square
 
 # For A
 invA <- solve(A)
+
 detA <- det(A)
 
 
