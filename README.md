@@ -1,10 +1,19 @@
 # Inverse-and-Determinants-in-R
 
 A <- matrix(1:100,  nrow = 10)
+
 B <- matrix(1:1000, nrow = 10)
 
-dim(A)  # should be 10 × 10
-dim(B)  # 10 × 100 — not square
+dim(A)  
+
+# should be 10 × 10
+
+dim(B)  
+
+# 10 × 100 — not square
+
+<img width="310" height="142" alt="image" src="https://github.com/user-attachments/assets/9818a603-1145-42da-9628-43d4346085a0" />
+
 
 # For A
 invA <- solve(A)
